@@ -4,12 +4,12 @@ import ButtonPrimary from "../ui/button-primary";
 
 const MainMenu = () => {
   return (
-    <ul className="flex items-center gap-4">
-      <MenuItem href="#home" text="Home" />
-      <MenuItem href="#services" text="Services" />
-      <MenuItem href="#about" text="About" />
-      <MenuItem href="#contact" text="Contact" />
-      <ButtonPrimary type="button" text="Join us" />
+    <ul className="flex flex-col lg:flex-row items-center gap-12 lg:gap-4">
+      <MenuItem href="#home" text="Inicio" />
+      <MenuItem href="#services" text="Servicio" />
+      <MenuItem href="#about" text="Sobre mí" />
+      <MenuItem href="#contact" text="Contacto" />
+      <ButtonPrimary type="button" text="Solicita tu asesoría!" />
     </ul>
   );
 };

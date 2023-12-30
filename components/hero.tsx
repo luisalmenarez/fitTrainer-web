@@ -9,29 +9,34 @@ const Hero = () => {
         <Image
           src="/images/hero.webp"
           alt="Hero image"
-          fill
-          className=" object-cover"
+          layout="fill"
+          objectFit="cover"
+          className="object-cover"
         />
-        <div className="absolute bg-black/70 letf-0 top-0 w-full h-full" />
+        <div className="absolute bg-black bg-opacity-70 left-0 top-0 w-full h-full" />
         <Container>
-          <div className="absolute w-4/5 top-1/2 -translate-y-1/2 flex flex-col gap-6">
-            <h1 className="text-zinc-50 text-4xl font-semibold">
-              Desafía tus límites, <br />
-              alcanza tus objetivos
+          <div className="absolute w-11/12 md:w-4/5 top-1/2 -translate-y-1/2 flex flex-col gap-6 items-center text-center sm:items-start sm:text-left">
+            <h1 className="w-full sm:w-7/12 md:w-5/12 lg:w-7/12 text-zinc-300 text-4xl lg:text-5xl font-bold">
+              Transforma tu cuerpo y mente con el mejor entrenador personalizado
             </h1>
-            <p className="w-1/2 text-stone-300">
-              Sumérgete en una experiencia única de{" "}
-              <span className="text-amber-300">fitness</span>. Más que tu{" "}
-              <span className="text-amber-300">entrenador</span>, seré tu aliado
-              en la búsqueda de equilibrio{" "}
-              <span className="text-amber-300">físico y mental</span>. Descubre
-              cómo cada sesión te acerca a una{" "}
-              <span className="text-amber-300">transformación</span> integral.
+            <p className="w-full sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 text-stone-400">
+              Descubre una{" "}
+              <span className="text-yellow-200">experiencia de fitness</span>{" "}
+              única donde cada sesión está diseñada para acercarte a tus{" "}
+              <span className="text-yellow-200">metas</span>. Como tu{" "}
+              <span className="text-yellow-200">aliado</span>, no solo te guío,
+              sino que <span className="text-yellow-200">personalizo</span>.
+              cada entrenamiento para tu{" "}
+              <span className="text-yellow-200">transformación integral</span>
             </p>
-            <div className="flex items-center gap-5">
-              <ButtonPrimary type="button" text="Comienza ahora!" />
+            <div className="w-9/12 md:w-1/2 flex flex-col sm:flex-row items-center gap-5">
               <ButtonPrimary
-                className="border-primary/50 bg-transparent hover:bg-transparent hover:text-white"
+                className="w-full"
+                type="button"
+                text="Comienza ahora!"
+              />
+              <ButtonPrimary
+                className="w-full border-primary/50 bg-transparent hover:bg-transparent hover:text-white"
                 type="button"
                 text="Ver reseñas!"
               />
