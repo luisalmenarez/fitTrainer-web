@@ -4,7 +4,7 @@ import MainMenu from "./main-menu";
 
 const Header = () => {
   return (
-    <header className="w-full left-0 top-0 fixed p-5">
+    <header className="w-full left-0 top-0 fixed p-5 z-40">
       <Container className="flex items-center justify-between">
         <section>
           <Logo />

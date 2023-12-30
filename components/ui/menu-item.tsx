@@ -13,7 +13,7 @@ const MenuItem = ({ className, text, href }: MenuItemProps) => {
       <Link
         href={href}
         className={cn(
-          "py-2 px-4 border-b-2 border-transparent hover:border-primary transition-all duration-300 ",
+          "text-white py-2 px-4 border-b-2 border-transparent hover:border-primary transition-all duration-300",
           className
         )}>
         {text}
