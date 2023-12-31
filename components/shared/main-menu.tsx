@@ -1,6 +1,6 @@
 import Link from "next/link";
-import MenuItem from "../ui/menu-item";
-import ButtonPrimary from "../ui/button-primary";
+import MenuItem from "@/components/ui/menu-item";
+import ButtonPrimary from "@/components/ui/button-primary";
 
 const MainMenu = () => {
   return (

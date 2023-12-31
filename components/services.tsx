@@ -1,11 +1,12 @@
-import Image from "next/image";
 import Container from "./shared/container";
-import ItemService from "./ui/item-service";
-import Title from "./ui/tite";
+import ItemService from "@/components/ui/item-service";
+import Title from "@/components/ui/tite";
 
 const Services = () => {
   return (
-    <section id="services">
+    <section
+      id="services"
+      className="min-h-screen flex items-center justify-center">
       <Container>
         <Title title="Fitness Plans &" titleColor="Nutritions" />
         <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">

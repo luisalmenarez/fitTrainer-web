@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "./shared/container";
-import ButtonPrimary from "./ui/button-primary";
+import ButtonPrimary from "@/components/ui/button-primary";
 
 const Hero = () => {
   return (
