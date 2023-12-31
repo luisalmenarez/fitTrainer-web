@@ -6,7 +6,7 @@ import Header from "@/components/shared/header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "One Page Gym",
+  title: "Landing Gym",
   description: "One Page Gym",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-black text-stone-400`}>
         <Header />
         {children}
       </body>

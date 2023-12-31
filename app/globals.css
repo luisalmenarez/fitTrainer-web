@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* nav-icon-5 */
 .nav-icon-5 {
   width: 35px;
