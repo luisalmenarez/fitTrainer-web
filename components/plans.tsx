@@ -4,7 +4,9 @@ import Title from "@/components/ui/tite";
 
 const Plans = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center">
+    <section
+      id="plans"
+      className="plans__section min-h-screen flex items-center justify-center">
       <Container>
         <Title title="Subscribe to" titleColor="Plans" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
