@@ -30,9 +30,13 @@ const Hero = () => {
               <span className="text-yellow-200">transformación integral</span>
             </p>
             <div className="w-9/12 md:w-1/2 flex flex-col sm:flex-row items-center gap-5">
-              <ButtonPrimary type="button" text="Comienza ahora!" />
               <ButtonPrimary
-                className="border-primary/50 bg-transparent hover:bg-transparent hover:text-white"
+                className="w-full md:w-auto"
+                type="button"
+                text="Comienza ahora!"
+              />
+              <ButtonPrimary
+                className="w-full md:w-auto border-primary/50 bg-transparent hover:bg-transparent hover:text-white"
                 type="button"
                 text="Ver reseñas!"
               />
