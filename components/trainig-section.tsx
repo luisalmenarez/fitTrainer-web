@@ -39,7 +39,7 @@ const TrainingSection = () => {
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/trainer-1.png"
+                  src="/images/training-5.jpg"
                   alt="Image Training"
                   fill
                   className="object-cover rounded-xl shadow-xl"
@@ -49,47 +49,47 @@ const TrainingSection = () => {
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/trainer-2.png"
+                  src="/images/training-2.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl"
+                  className="object-cover rounded-xl shadow-xl opacity-50"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/trainer-3.png"
+                  src="/images/training-3.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl"
+                  className="object-cover rounded-xl shadow-xl opacity-50"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/trainer-4.png"
+                  src="/images/training-4.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl"
+                  className="object-cover rounded-xl shadow-xl opacity-50"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/trainer-5.png"
+                  src="/images/training-1.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl"
+                  className="object-cover rounded-xl shadow-xl opacity-50"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/trainer-6.png"
+                  src="/images/training-6.jpg"
                   alt="Image Training"
                   fill
                   className="object-cover rounded-xl shadow-xl"

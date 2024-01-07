@@ -47,7 +47,7 @@ const Footer = () => {
         </section>
       </Container>
       <section className="bg-primary text-white text-center p-3 rounded-tl-lg rounded-tr-lg">
-        <h5 className="font-bold">
+        <h5 className="text-zinc-100">
           {" "}
           Todos los derechos reservados &copy; 2024{" "}
         </h5>
