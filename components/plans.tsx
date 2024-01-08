@@ -10,19 +10,27 @@ const Plans = () => {
       <Container>
         <Title title="Subscribe to" titleColor="Plans" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <ItemPlan name="Standar" duration={6} price={4800} priceMonth={800} />
           <ItemPlan
-            name="Fitness"
+            name="Básico"
+            duration={1}
+            description=""
+            price={"150.000"}
+            priceMonth={"150.000"}
+          />
+          <ItemPlan
+            name="Intermedio"
             duration={12}
-            price={7200}
-            priceMonth={600}
+            description=""
+            price={"400.000"}
+            priceMonth={"133.000"}
             active
           />
           <ItemPlan
-            name="Entreprise"
+            name="Premium"
             duration={24}
-            price={12000}
-            priceMonth={500}
+            description=""
+            price={"1.000.000"}
+            priceMonth={"83.000"}
           />
         </div>
       </Container>

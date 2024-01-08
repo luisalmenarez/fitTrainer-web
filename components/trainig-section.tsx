@@ -39,7 +39,7 @@ const TrainingSection = () => {
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/training-5.jpg"
+                  src="/images/training-1.jpg"
                   alt="Image Training"
                   fill
                   className="object-cover rounded-xl shadow-xl"
@@ -52,7 +52,7 @@ const TrainingSection = () => {
                   src="/images/training-2.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl opacity-50"
+                  className="object-cover rounded-xl shadow-xl"
                 />
               </div>
             </SwiperSlide>
@@ -62,7 +62,7 @@ const TrainingSection = () => {
                   src="/images/training-3.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl opacity-50"
+                  className="object-cover rounded-xl shadow-xl"
                 />
               </div>
             </SwiperSlide>
@@ -72,17 +72,17 @@ const TrainingSection = () => {
                   src="/images/training-4.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl opacity-50"
+                  className="object-cover rounded-xl shadow-xl"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative mx-auto w-full h-[70vh]">
                 <Image
-                  src="/images/training-1.jpg"
+                  src="/images/training-5.jpg"
                   alt="Image Training"
                   fill
-                  className="object-cover rounded-xl shadow-xl opacity-50"
+                  className="object-cover rounded-xl shadow-xl"
                 />
               </div>
             </SwiperSlide>
