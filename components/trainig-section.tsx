@@ -14,7 +14,7 @@ const TrainingSection = () => {
       id="training"
       className="training__sessions min-h-screen flex items-center justify-center">
       <Container>
-        <Title title="Training" titleColor="Sessions" />
+        <Title title="Sesiones de" titleColor="entrenamiento" />
         <div>
           <Swiper
             spaceBetween={25}

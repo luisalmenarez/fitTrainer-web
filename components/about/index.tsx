@@ -9,7 +9,7 @@ const AboutSection = () => {
       id="about"
       className="about__section min-h-screen flex items-center justify-center">
       <Container>
-        <Title title="Why Join with" titleColor="Us?" />
+        <Title title="Por qué entrenar" titleColor="conmigo?" />
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           <SectionList />
           <SectionImage />
