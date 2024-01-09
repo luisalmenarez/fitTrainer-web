@@ -9,7 +9,7 @@ interface ItemPlanProps {
   description: string;
   price: string;
   priceMonth: string;
-  active?: boolean;
+  active?: string;
 }
 
 const ItemPlan: FC<ItemPlanProps> = ({
@@ -27,7 +27,7 @@ const ItemPlan: FC<ItemPlanProps> = ({
         active && "relative border-2 border-primary p-10 gap-12"
       )}>
       {active && (
-        <div className="absolute bg-primary py-2 px-4 text-white -top-6 left-1/2 -translate-x-1/2 ">
+        <div className="absolute z-50 bg-primary py-2 px-4 text-white -top-6 left-1/2 -translate-x-1/2 ">
           <h5>Más solicitado</h5>
         </div>
       )}
@@ -39,7 +39,7 @@ const ItemPlan: FC<ItemPlanProps> = ({
       <p> ${priceMonth} / Mes</p>
       <ButtonPrimary
         type="button"
-        text="Select plan"
+        text="Seleccionar plan"
         className="w-full border-2 px-8 border-primary bg-transparent hover:bg-transparent"
       />
     </div>

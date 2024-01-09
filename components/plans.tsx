@@ -1,6 +1,7 @@
 import Container from "./shared/container";
 import ItemPlan from "@/components/ui/item-plan";
 import Title from "@/components/ui/tite";
+import { plansData } from "@/assets/data";
 
 const Plans = () => {
   return (
@@ -8,30 +9,19 @@ const Plans = () => {
       id="plans"
       className="plans__section min-h-screen flex items-center justify-center">
       <Container>
-        <Title title="Subscribe to" titleColor="Plans" />
+        <Title title="Planes " titleColor="disponibles" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <ItemPlan
-            name="Básico"
-            duration={1}
-            description=""
-            price={"150.000"}
-            priceMonth={"150.000"}
-          />
-          <ItemPlan
-            name="Intermedio"
-            duration={12}
-            description=""
-            price={"400.000"}
-            priceMonth={"133.000"}
-            active
-          />
-          <ItemPlan
-            name="Premium"
-            duration={24}
-            description=""
-            price={"1.000.000"}
-            priceMonth={"83.000"}
-          />
+          {plansData.map((plan, index) => (
+            <ItemPlan
+              key={index}
+              name={plan.name}
+              duration={plan.duration}
+              description={plan.description}
+              price={plan.price}
+              priceMonth={plan.priceMonth}
+              active={plan.active}
+            />
+          ))}
         </div>
       </Container>
     </section>

@@ -36,3 +36,31 @@ export const servicesData = [
     image: "/icons/icon-6.png",
   },
 ];
+
+export const plansData = [
+  {
+    name: "Básico",
+    duration: 1,
+    description:
+      "Accede a funciones esenciales para comenzar tu viaje fitness. Ideal para quienes buscan un plan de un mes sin compromisos a un precio asequible.",
+    price: "150.000",
+    priceMonth: "150.000",
+  },
+  {
+    name: "Intermedio",
+    duration: 3,
+    description:
+      "El plan más popular. Disfruta de todas las funciones premium durante 3 meses a un precio mensual reducido. Perfecto para aquellos comprometidos con su bienestar a largo plazo.",
+    price: "400.000",
+    priceMonth: "133.000",
+    active: "active",
+  },
+  {
+    name: "Premium",
+    duration: 12,
+    description:
+      "La experiencia definitiva. Obtén acceso ilimitado a todas las funciones durante 12 meses a un precio sorprendentemente asequible por mes. La elección perfecta para los apasionados del fitness.",
+    price: "1.000.000",
+    priceMonth: "83.000",
+  },
+];
