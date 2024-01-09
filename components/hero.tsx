@@ -7,14 +7,14 @@ const Hero = () => {
     <section id="#home">
       <div className="relative w-full h-screen">
         <Image
-          src="/images/hero.webp"
+          src="/images/hero.jpg"
           alt="Hero image"
           layout="fill"
           objectFit="cover"
           className="object-cover hidden md:block"
         />
         <Image
-          src="/images/hero-mobile.webp"
+          src="/images/hero-mobile.jpg"
           alt="Hero image"
           layout="fill"
           objectFit="cover"

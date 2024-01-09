@@ -19,7 +19,7 @@ const ItemService: FC<ItemServiceProps> = ({ image, title, description }) => {
           className="object-cover"
         />
       </div>
-      <h3 className="text-xl uppercase font-semibold text-primary/90">
+      <h3 className="text-xl text-center uppercase font-semibold text-primary/90">
         {" "}
         {title}{" "}
       </h3>
