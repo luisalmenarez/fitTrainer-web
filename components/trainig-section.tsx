@@ -12,7 +12,15 @@ const TrainingSection = () => {
   return (
     <section
       id="training"
-      className="training__sessions min-h-screen flex items-center justify-center">
+      className="training__sessions relative min-h-screen flex items-center justify-center">
+      <Image
+        src="/images/heroTraining.jpg"
+        alt="Hero image"
+        layout="fill"
+        objectFit="cover"
+        className="object-cover"
+      />
+      <div className="absolute bg-black bg-opacity-90 left-0 top-0 w-full h-full" />
       <Container>
         <Title title="Sesiones de" titleColor="entrenamiento" />
         <div>

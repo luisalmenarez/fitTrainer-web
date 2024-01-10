@@ -14,7 +14,7 @@ const Hero = () => {
           className="object-cover hidden md:block"
         />
         <Image
-          src="/images/hero-mobile.jpg"
+          src="/images/heroMobile.jpg"
           alt="Hero image"
           layout="fill"
           objectFit="cover"
