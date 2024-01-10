@@ -23,7 +23,7 @@ const ItemPlan: FC<ItemPlanProps> = ({
   return (
     <div
       className={cn(
-        "flex flex-col items-center gap-y-10 w-full bg-gray-light p-8 rounded-lg transition-transform ease-in-out duration-500 transform hover:translate-y-[-10px] hover:shadow-custom bg-opacity-20 backdrop-filter backdrop-blur-lg",
+        "flex flex-col items-center gap-y-10 w-full bg-gray-light p-8 rounded-lg transition-transform ease-in-out duration-500 transform hover:translate-y-[-10px] hover:shadow-custom bg-opacity-20 backdrop-filter backdrop-blur-[2px]",
         active && "relative border-2 border-primary p-10 gap-12"
       )}>
       {active && (
@@ -33,7 +33,7 @@ const ItemPlan: FC<ItemPlanProps> = ({
       )}
 
       <h3 className="text-3xl text-stone-200 font-semibold"> {name} </h3>
-      <p className="text-center">{description}</p>
+      <p className="text-center text-stone-300">{description}</p>
       <time>{duration} / Meses </time>
       <p className="text-2xl font-semibold text-stone-100">${price} </p>
       <p> ${priceMonth} / Mes</p>

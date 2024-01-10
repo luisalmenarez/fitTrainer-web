@@ -32,8 +32,8 @@ const Hero = () => {
               única donde cada sesión está diseñada para acercarte a tus{" "}
               <span className="text-yellow-200">metas</span>. Como tu{" "}
               <span className="text-yellow-200">aliado</span>, no solo te guío,
-              sino que <span className="text-yellow-200">personalizo</span>.
-              cada entrenamiento para tu{" "}
+              sino que <span className="text-yellow-200">personalizo</span> cada
+              entrenamiento para tu{" "}
               <span className="text-yellow-200">transformación integral</span>
             </p>
             <div className="w-9/12 md:w-1/2 flex flex-col sm:flex-row items-center gap-5">

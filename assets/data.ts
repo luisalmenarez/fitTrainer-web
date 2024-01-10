@@ -30,9 +30,9 @@ export const servicesData = [
     image: "/icons/icon-5.png",
   },
   {
-    title: "Recuperación de Lecciones",
+    title: "Recuperación de Lesiones",
     description:
-      "Prioriza la recuperación en tu viaje fitness. Nuestro programa de recuperación de lecciones te ayuda a revitalizar y preparar tu cuerpo para el próximo desafío. Desde técnicas de estiramiento hasta prácticas de relajación, cuido de ti después de cada esfuerzo.",
+      "Prioriza la recuperación en tu viaje fitness. Nuestro programa de recuperación de lesiones te ayuda a revitalizar y preparar tu cuerpo para el próximo desafío. Desde técnicas de estiramiento hasta prácticas de relajación, cuido de ti después de cada esfuerzo.",
     image: "/icons/icon-6.png",
   },
 ];

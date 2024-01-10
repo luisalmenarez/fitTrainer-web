@@ -13,7 +13,7 @@ const config: Config = {
         "gray-light": "#414141",
       },
       boxShadow: {
-        custom: "0 25px 50px -12px rgba(255, 245, 235, 0.1)",
+        custom: "0 25px 50px -12px rgba(255, 245, 235, 0.5)",
       },
     },
   },

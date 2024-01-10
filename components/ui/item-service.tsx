@@ -23,7 +23,7 @@ const ItemService: FC<ItemServiceProps> = ({ image, title, description }) => {
         {" "}
         {title}{" "}
       </h3>
-      <p className="text-center text-stone-400 max-w-sm">{description} </p>
+      <p className="text-center text-stone-300 max-w-sm">{description} </p>
     </div>
   );
 };
