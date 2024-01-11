@@ -4,7 +4,7 @@ import ButtonPrimary from "@/components/ui/button-primary";
 const SectionList = () => {
   return (
     <section className="flex flex-1 flex-col items-center gap-8">
-      <ul className="flex flex-col gap-4">
+      <ul className="flex flex-col gap-4 text-stone-100 font-semibold">
         <ItemAbout text="Trabajo 100% personalizado" />
         <ItemAbout text="Entrenador Experto" />
         <ItemAbout text="Flexibilidad horaria" />

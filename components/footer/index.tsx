@@ -9,45 +9,49 @@ const Footer = () => {
       <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 px-5 py-10 lg:px-8 lg:py-20">
         <Logo />
         <FooterSection
-          title="Company"
+          title="Menú"
           list={[
-            { text: "About", href: "/about" },
-            { text: "Careers", href: "/careers" },
-            { text: "Blogs", href: "/blogs" },
+            { text: "Inicio", href: "#home" },
+            { text: "Sobre mí", href: "/about" },
+            { text: "Servicios", href: "#services" },
           ]}
         />
         <FooterSection
-          title="Contact"
+          title="Contacto"
           list={[
-            { text: "Help / FAQ", href: "/help" },
-            { text: "Press", href: "/press" },
+            {
+              text: "Instagram",
+              href: "https://www.instagram.com/almenares_08/",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+            { text: "WhatsApp", href: "/WhatsApp" },
           ]}
         />
         <FooterSection
           title="More"
           list={[
-            { text: "Program", href: "/program" },
-            { text: "Plan", href: "/plan" },
+            { text: "Programas", href: "/program" },
+            { text: "Planes", href: "/plan" },
           ]}
         />
         <section>
-          <h5 className="text-2xl font-semibold text-zinc-300 mb-5">
+          <h6 className="text-2xl font-semibold text-zinc-300 mb-5">
             Popular Tags
-          </h5>
+          </h6>
           <article className="flex items-center flex-wrap gap-2">
-            <Tag text="Abs" />
-            <Tag text="Workout" />
-            <Tag text="Nutrition" />
-            <Tag text="Boxing" />
-            <Tag text="Gym" />
-            <Tag text="Facilities" active />
-            <Tag text="Plans" />
-            <Tag text="Trainers" />
+            <Tag text="Abdominales" />
+            <Tag text="Entrenamiento" />
+            <Tag text="Nutrición" />
+            <Tag text="Boxeo" />
+            <Tag text="Gimnasio" />
+            <Tag text="Entrenador" active />
+            <Tag text="Planes" />
           </article>
         </section>
       </Container>
       <section className="bg-primary text-white text-center p-3 rounded-tl-lg rounded-tr-lg">
-        <h5 className="text-zinc-100">
+        <h5 className="text-white font-semibold">
           {" "}
           Todos los derechos reservados &copy; 2024{" "}
         </h5>

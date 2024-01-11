@@ -23,7 +23,7 @@ const ItemPlan: FC<ItemPlanProps> = ({
   return (
     <div
       className={cn(
-        "flex flex-col items-center gap-y-10 w-full bg-gray-light p-8 rounded-lg transition-transform ease-in-out duration-500 transform hover:translate-y-[-10px] hover:shadow-custom bg-opacity-20 backdrop-filter backdrop-blur-[2px]",
+        "flex flex-col items-center gap-y-10 w-full bg-gray-light/30 p-8 rounded-lg transition-transform ease-in-out duration-500 transform hover:translate-y-[-10px] hover:shadow-custom bg-opacity-20 backdrop-filter backdrop-blur-[3px]",
         active && "relative border-2 border-primary p-10 gap-12"
       )}>
       {active && (
