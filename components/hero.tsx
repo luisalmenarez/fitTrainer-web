@@ -23,18 +23,18 @@ const Hero = () => {
         <div className="absolute bg-black bg-opacity-75 left-0 top-0 w-full h-full" />
         <Container>
           <div className="absolute w-11/12 md:w-4/5 top-1/2 -translate-y-1/2 flex flex-col gap-6 items-center text-center sm:items-start sm:text-left">
-            <h1 className="w-full sm:w-7/12 md:w-5/12 lg:w-7/12 text-zinc-300 text-4xl lg:text-5xl font-bold">
+            <h1 className="w-full sm:w-7/12 md:w-5/12 lg:w-7/12 text-zinc-100 text-4xl lg:text-5xl font-bold">
               Transforma tu cuerpo y mente con el mejor entrenador personalizado
             </h1>
-            <p className="w-full sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 text-stone-400">
+            <p className="w-full sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 text-stone-100">
               Descubre una{" "}
-              <span className="text-yellow-200">experiencia de fitness</span>{" "}
+              <span className="text-yellow-300">experiencia de fitness</span>{" "}
               única donde cada sesión está diseñada para acercarte a tus{" "}
-              <span className="text-yellow-200">metas</span>. Como tu{" "}
-              <span className="text-yellow-200">aliado</span>, no solo te guío,
-              sino que <span className="text-yellow-200">personalizo</span> cada
+              <span className="text-yellow-300">metas</span>. Como tu{" "}
+              <span className="text-yellow-300">aliado</span>, no solo te guío,
+              sino que <span className="text-yellow-300">personalizo</span> cada
               entrenamiento para tu{" "}
-              <span className="text-yellow-200">transformación integral</span>
+              <span className="text-yellow-300">transformación integral</span>
             </p>
             <div className="w-9/12 md:w-1/2 flex flex-col sm:flex-row items-center gap-5">
               <ButtonPrimary

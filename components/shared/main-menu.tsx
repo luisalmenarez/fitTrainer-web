@@ -9,7 +9,9 @@ const MainMenu = () => {
       <MenuItem href="#services" text="Servicio" />
       <MenuItem href="#about" text="Sobre mí" />
       <MenuItem href="#contact" text="Contacto" />
-      <ButtonPrimary type="button" text="Solicita tu asesoría!" />
+      <li>
+        <ButtonPrimary type="button" text="Solicita tu asesoría!" />
+      </li>
     </ul>
   );
 };

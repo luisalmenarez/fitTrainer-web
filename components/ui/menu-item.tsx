@@ -12,6 +12,7 @@ const MenuItem = ({ className, text, href }: MenuItemProps) => {
     <li className="grid place-items-center">
       <Link
         href={href}
+        tabIndex={0}
         className={cn(
           "text-zinc-300 py-2 px-4 border-b-2 border-transparent hover:border-primary transition-all duration-300",
           className

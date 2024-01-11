@@ -28,15 +28,15 @@ const ItemPlan: FC<ItemPlanProps> = ({
       )}>
       {active && (
         <div className="absolute z-50 bg-primary py-2 px-4 text-white -top-6 left-1/2 -translate-x-1/2 ">
-          <h5>Más solicitado</h5>
+          <h4>Más solicitado</h4>
         </div>
       )}
 
-      <h3 className="text-3xl text-stone-200 font-semibold"> {name} </h3>
-      <p className="text-center text-stone-300">{description}</p>
-      <time>{duration} / Meses </time>
-      <p className="text-2xl font-semibold text-stone-100">${price} </p>
-      <p> ${priceMonth} / Mes</p>
+      <h3 className="text-3xl text-primary font-bold"> {name} </h3>
+      <p className="text-center text-stone-100">{description}</p>
+      <time className="text-stone-100 font-bold">{duration} / Meses </time>
+      <p className="text-2xl font-bold text-primary">${price} </p>
+      <p className="text-stone-100 font-semibold"> ${priceMonth} / Mes</p>
       <ButtonPrimary
         type="button"
         text="Seleccionar plan"

@@ -21,7 +21,10 @@ const Header = () => {
             <MainMenu />
           </section>
           <section className="lg:hidden">
-            <button onClick={() => setShowMenu(true)} type="button">
+            <button
+              onClick={() => setShowMenu(true)}
+              type="button"
+              aria-label="Toggle Menú">
               <IconMenu isOpen={showMenu} />
             </button>
           </section>
