@@ -20,7 +20,7 @@ const Hero = () => {
           objectFit="cover"
           className="object-cover block md:hidden"
         />
-        <div className="absolute bg-black bg-opacity-90 left-0 top-0 w-full h-full" />
+        <div className="absolute bg-black bg-opacity-75 left-0 top-0 w-full h-full" />
         <Container>
           <div className="absolute w-11/12 md:w-4/5 top-1/2 -translate-y-1/2 flex flex-col gap-6 items-center text-center sm:items-start sm:text-left">
             <h1 className="w-full sm:w-7/12 md:w-5/12 lg:w-7/12 text-zinc-300 text-4xl lg:text-5xl font-bold">

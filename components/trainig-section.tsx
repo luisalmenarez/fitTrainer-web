@@ -20,7 +20,7 @@ const TrainingSection = () => {
         objectFit="cover"
         className="object-cover"
       />
-      <div className="absolute bg-black bg-opacity-90 left-0 top-0 w-full h-full" />
+      <div className="absolute bg-black bg-opacity-75 left-0 top-0 w-full h-full" />
       <Container>
         <Title title="Sesiones de" titleColor="entrenamiento" />
         <div>
