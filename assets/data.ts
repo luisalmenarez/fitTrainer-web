@@ -64,3 +64,13 @@ export const plansData = [
     priceMonth: "83.000",
   },
 ];
+
+export const dataDescription = [
+  {
+    descriptionSEO: `Descubre tu mejor versión conmigo como tu entrenador de gimnasio personalizado. Enfócate en tus metas fitness, ya sea aumentar masa muscular, perder peso, tonificar o disfrutar de clases grupales. Mis servicios abarcan desde programas especializados hasta masoterapia y recuperación de lesiones.
+
+    Optimiza tu entrenamiento con antropometría avanzada, obteniendo mediciones precisas para personalizar tu plan fitness. Además, elige entre los planes, desde el Básico hasta el Premium, adaptados a tus necesidades y metas a corto y largo plazo.
+    
+    Únete a nuestra comunidad fitness, donde cuidamos de tu bienestar integral. Transforma tu cuerpo, revitaliza tu mente y alcanza tus objetivos con la guía experta de nuestro entrenador. ¡Descubre la experiencia fitness definitiva con nosotros!`,
+  },
+];

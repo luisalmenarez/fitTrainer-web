@@ -12,9 +12,9 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full left-0 top-0 fixed p-3 md:p-4 z-40 bg-gray-800 bg-opacity-10 backdrop-filter backdrop-blur-lg">
+      <header className="w-full left-0 top-0 fixed z-40 bg-gray-800 bg-opacity-10 backdrop-filter backdrop-blur-lg">
         <Container className="flex items-center justify-between">
-          <section>
+          <section className="hover:scale-110 transition-all duration-300">
             <Logo />
           </section>
           <section className="hidden lg:block">

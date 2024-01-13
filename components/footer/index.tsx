@@ -29,7 +29,7 @@ const Footer = () => {
           ]}
         />
         <FooterSection
-          title="More"
+          title="Más"
           list={[
             { text: "Programas", href: "/program" },
             { text: "Planes", href: "/plan" },
@@ -37,9 +37,9 @@ const Footer = () => {
         />
         <section>
           <h6 className="text-2xl font-semibold text-zinc-300 mb-5">
-            Popular Tags
+            Búsquedas populares
           </h6>
-          <article className="flex items-center flex-wrap gap-2">
+          <article className="flex items-center flex-wrap gap-2 text-white">
             <Tag text="Abdominales" />
             <Tag text="Entrenamiento" />
             <Tag text="Nutrición" />

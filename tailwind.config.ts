@@ -17,7 +17,6 @@ const config: Config = {
       },
     },
   },
-  important: true,
   plugins: [],
 };
 

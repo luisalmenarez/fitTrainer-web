@@ -9,7 +9,7 @@ interface ItemServiceProps {
 
 const ItemService: FC<ItemServiceProps> = ({ image, title, description }) => {
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-4 bg-[#fce7d8] p-8 rounded-lg transition-transform ease-in-out duration-700 transform hover:shadow-2xl bg-opacity-20 backdrop-filter backdrop-blur-[3px]">
       <div className="relative size-20">
         <Image
           src={image}

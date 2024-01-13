@@ -28,13 +28,13 @@ const Hero = () => {
             </h1>
             <p className="w-full sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 text-stone-100">
               Descubre una{" "}
-              <span className="text-yellow-300">experiencia de fitness</span>{" "}
+              <span className="text-orange-300">experiencia de fitness</span>{" "}
               única donde cada sesión está diseñada para acercarte a tus{" "}
-              <span className="text-yellow-300">metas</span>. Como tu{" "}
-              <span className="text-yellow-300">aliado</span>, no solo te guío,
-              sino que <span className="text-yellow-300">personalizo</span> cada
+              <span className="text-orange-300">metas</span>. Como tu{" "}
+              <span className="text-orange-300">aliado</span>, no solo te guío,
+              sino que <span className="text-orange-300">personalizo</span> cada
               entrenamiento para tu{" "}
-              <span className="text-yellow-300">transformación integral</span>
+              <span className="text-orange-300">transformación integral</span>
             </p>
             <div className="w-9/12 md:w-1/2 flex flex-col sm:flex-row items-center gap-5">
               <ButtonPrimary
