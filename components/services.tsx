@@ -1,3 +1,9 @@
+"use client";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
 import Container from "./shared/container";
 import ItemService from "@/components/ui/item-service";
 import Title from "@/components/ui/tite";
@@ -22,15 +28,42 @@ const Services = () => {
           title="Fitness & Nutrición Integral"
           titleColor="Transforma Vida"
         />
-        <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
-          {servicesData.map((service, index) => (
-            <ItemService
-              key={index}
-              image={service.image}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
+        <div>
+          <Swiper
+            spaceBetween={25}
+            slidesPerView={3}
+            loop={true}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            // navigation={true}
+            modules={[Pagination, Navigation]}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+            }}>
+            <div className="w-full grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {servicesData.map((service, index) => (
+                <SwiperSlide key={index}>
+                  <div className="grid place-items-center relative mx-auto w-full h-[80vh]">
+                    <ItemService
+                      image={service.image}
+                      title={service.title}
+                      description={service.description}
+                      thumb={service.thumb}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </div>
+          </Swiper>
         </div>
       </Container>
     </section>
