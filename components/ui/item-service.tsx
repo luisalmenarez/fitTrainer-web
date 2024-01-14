@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import { motion, Variants } from "framer-motion";
 
 interface ItemServiceProps {
   image: string;
@@ -14,8 +15,24 @@ const ItemService: FC<ItemServiceProps> = ({
   title,
   description,
 }) => {
+  const cardVariants: Variants = {
+    offscreen: { x: 300 },
+    onscreen: {
+      x: 1,
+      transition: {
+        type: "tween",
+        duration: 0.3,
+      },
+    },
+  };
+
   return (
-    <div className="w-full h-4/5 flex flex-col items-left justify-end gap-2 px-8 py-16 rounded-lg transition-transform ease-in-out duration-700 transform hover:shadow-2xl bg-opacity-20 backdrop-filter backdrop-blur-[3px]">
+    <motion.div
+      className="w-full h-4/5 flex flex-col items-left justify-end gap-2 px-8 py-16 rounded-lg transition-all duration-500 transform hover:shadow-custom "
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: false, amount: 0.1 }}
+      variants={cardVariants}>
       <Image
         src={image}
         alt={"Background Image " + title}
@@ -36,7 +53,7 @@ const ItemService: FC<ItemServiceProps> = ({
         {title}{" "}
       </h3>
       <p className="text-sm text-left text-stone-100 z-10">{description} </p>
-    </div>
+    </motion.div>
   );
 };
 

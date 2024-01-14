@@ -9,10 +9,11 @@ import ItemService from "@/components/ui/item-service";
 import Title from "@/components/ui/tite";
 import { servicesData } from "@/assets/data";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section
+    <motion.section
       id="services"
       className="services__section relative min-h-screen flex items-center justify-center mb-10 lg:mb-0">
       <Image
@@ -66,7 +67,7 @@ const Services = () => {
           </Swiper>
         </div>
       </Container>
-    </section>
+    </motion.section>
   );
 };
 

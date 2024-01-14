@@ -18,7 +18,7 @@ const MainMenu = () => {
           key={index}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ delay: item.delay, duration: 0.2 }}
           variants={{
             hidden: { opacity: 0, x: -100 },
