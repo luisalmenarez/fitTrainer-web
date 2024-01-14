@@ -16,12 +16,12 @@ const ItemService: FC<ItemServiceProps> = ({
   description,
 }) => {
   const cardVariants: Variants = {
-    offscreen: { x: 300 },
+    offscreen: { x: 200 },
     onscreen: {
       x: 1,
       transition: {
         type: "tween",
-        duration: 0.3,
+        duration: 0.2,
       },
     },
   };

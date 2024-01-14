@@ -1,8 +1,8 @@
+"use client";
 import ButtonPrimary from "@/components/ui/button-primary";
 import { cn } from "@/libs/utils";
 import { FC } from "react";
-import ItemAbout from "./ul-item-about";
-
+import { motion } from "framer-motion";
 interface ItemPlanProps {
   name: string;
   duration: number;
@@ -20,11 +20,23 @@ const ItemPlan: FC<ItemPlanProps> = ({
   priceMonth,
   active,
 }) => {
+  const containerVariants = {
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: false, amount: 0.2 },
+    transition: { duration: 0.4 },
+    variants: {
+      hidden: { opacity: 0, scale: 0.8 },
+      visible: { opacity: 1, scale: 1 },
+    },
+  };
+
   return (
-    <div
+    <motion.div
+      {...containerVariants}
       className={cn(
         "flex flex-col items-center gap-y-10 w-full bg-gray-light/30 p-8 rounded-lg transition-transform ease-in-out duration-500 transform hover:translate-y-[-10px] hover:shadow-custom bg-opacity-20 backdrop-filter backdrop-blur-[3px]",
-        active && "relative border-2 border-primary p-10 gap-12"
+        active && "relative border-2 text-center border-primary p-10 gap-12"
       )}>
       {active && (
         <div className="absolute z-50 bg-primary py-2 px-4 text-white -top-6 left-1/2 -translate-x-1/2 ">
@@ -42,7 +54,7 @@ const ItemPlan: FC<ItemPlanProps> = ({
         text="Seleccionar plan"
         className="w-full border-2 px-8 border-primary bg-transparent hover:bg-transparent"
       />
-    </div>
+    </motion.div>
   );
 };
 

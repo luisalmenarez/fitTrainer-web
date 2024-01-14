@@ -7,6 +7,8 @@ import Title from "@/components/ui/tite";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
+import { trainingImages } from "@/assets/data";
+import TrainingImages from "./ui/training-images";
 
 const TrainingSection = () => {
   return (
@@ -44,66 +46,12 @@ const TrainingSection = () => {
                 slidesPerView: 3,
               },
             }}>
-            <SwiperSlide>
-              <div className="relative mx-auto w-full h-[70vh]">
-                <Image
-                  src="/images/training-1.jpg"
-                  alt="Image Training"
-                  fill
-                  className="object-cover rounded-xl shadow-xl"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative mx-auto w-full h-[70vh]">
-                <Image
-                  src="/images/training-2.jpg"
-                  alt="Image Training"
-                  fill
-                  className="object-cover rounded-xl shadow-xl"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative mx-auto w-full h-[70vh]">
-                <Image
-                  src="/images/training-3.jpg"
-                  alt="Image Training"
-                  fill
-                  className="object-cover rounded-xl shadow-xl"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative mx-auto w-full h-[70vh]">
-                <Image
-                  src="/images/training-4.jpg"
-                  alt="Image Training"
-                  fill
-                  className="object-cover rounded-xl shadow-xl"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative mx-auto w-full h-[70vh]">
-                <Image
-                  src="/images/training-5.jpg"
-                  alt="Image Training"
-                  fill
-                  className="object-cover rounded-xl shadow-xl"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative mx-auto w-full h-[70vh]">
-                <Image
-                  src="/images/training-6.jpg"
-                  alt="Image Training"
-                  fill
-                  className="object-cover rounded-xl shadow-xl"
-                />
-              </div>
-            </SwiperSlide>
+            <div className="w-full grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            {trainingImages.map((img, index) => (
+              <SwiperSlide key={index}>
+                <TrainingImages url={img.image} alt={img.alt} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </Container>

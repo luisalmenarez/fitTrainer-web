@@ -71,6 +71,33 @@ export const plansData = [
   },
 ];
 
+export const trainingImages = [
+  {
+    image: "/images/training-1.jpg",
+    alt: "Image Training",
+  },
+  {
+    image: "/images/training-2.jpg",
+    alt: "Image Training",
+  },
+  {
+    image: "/images/training-3.jpg",
+    alt: "Image Training",
+  },
+  {
+    image: "/images/training-4.jpg",
+    alt: "Image Training",
+  },
+  {
+    image: "/images/training-5.jpg",
+    alt: "Image Training",
+  },
+  {
+    image: "/images/training-6.jpg",
+    alt: "Image Training",
+  },
+];
+
 export const dataDescription = [
   {
     descriptionSEO: `Descubre tu mejor versión conmigo como tu entrenador de gimnasio personalizado. Enfócate en tus metas fitness, ya sea aumentar masa muscular, perder peso, tonificar o disfrutar de clases grupales. Mis servicios abarcan desde programas especializados hasta masoterapia y recuperación de lesiones.
