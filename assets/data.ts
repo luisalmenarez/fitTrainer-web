@@ -49,25 +49,44 @@ export const plansData = [
     duration: 1,
     description:
       "Accede a funciones esenciales para comenzar tu viaje fitness. Ideal para quienes buscan un plan de un mes sin compromisos a un precio asequible.",
-    price: "150.000",
-    priceMonth: "150.000",
+    price: "40",
+    priceMonth: "40",
+    textBenefits: [
+      "Rutinas personalizadas",
+      "Asesoramiento nutricional",
+      "Seguimiento de progreso",
+      "Acceso a clases grupales",
+    ],
   },
   {
     name: "Intermedio",
     duration: 3,
     description:
       "El plan más popular. Disfruta de todas las funciones premium durante 3 meses a un precio mensual reducido. Perfecto para aquellos comprometidos con su bienestar a largo plazo.",
-    price: "400.000",
-    priceMonth: "133.000",
+    price: "100",
+    priceMonth: "33",
     active: "active",
+    textBenefits: [
+      "Antropometría intermedia",
+      "Programa avanzado de pérdida de peso",
+      "Sesiones de masoterapia incluidas",
+      "Asesoramiento personalizado",
+      "Acceso exclusivo a eventos fitness",
+    ],
   },
   {
     name: "Premium",
     duration: 12,
     description:
       "La experiencia definitiva. Obtén acceso ilimitado a todas las funciones durante 12 meses a un precio sorprendentemente asequible por mes. La elección perfecta para los apasionados del fitness.",
-    price: "1.000.000",
-    priceMonth: "83.000",
+    price: "255",
+    priceMonth: "22",
+    textBenefits: [
+      "Antropometría avanzada incluida",
+      "Entrenamiento especializado en aumento de masa muscular",
+      "Sesiones de recuperación de lesiones",
+      "Plan nutricional personalizado",
+    ],
   },
 ];
 

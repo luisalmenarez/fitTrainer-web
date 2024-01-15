@@ -19,7 +19,7 @@ const Plans = () => {
       <div className="absolute bg-black bg-opacity-75 left-0 top-0 w-full h-full" />
       <Container>
         <Title title="Planes " titleColor="disponibles" />
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="grid grid-cols-1  lg:grid-cols-3 place-items-center gap-8 mb-10">
           {plansData.map((plan, index) => (
             <ItemPlan
               key={index}
@@ -28,7 +28,9 @@ const Plans = () => {
               description={plan.description}
               price={plan.price}
               priceMonth={plan.priceMonth}
+              textBenefits={plan.textBenefits}
               active={plan.active}
+              indexEffect={index}
             />
           ))}
         </div>

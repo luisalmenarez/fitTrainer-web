@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#E75325",
-        "gray-light": "#414141",
+        "gray-light": "#232028",
       },
       boxShadow: {
         custom: "0 25px 50px -12px rgba(255, 245, 235, 0.5)",
