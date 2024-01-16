@@ -54,12 +54,13 @@ const ItemPlan: FC<ItemPlanProps> = ({
   };
 
   return (
-    <div className="transition-all duration-500 hover:scale-105">
+    <div className="transition-all duration-700 hover:scale-105">
       <motion.div
         {...containerVariants}
         className={cn(
-          "flex flex-col gap-y-6 w-full bg-[#202328]/95 p-8 rounded-2xl",
-          active && "bg-gradient-to-b from-[#5c200e] to-primary p-10 gap-10"
+          "flex flex-col gap-y-6 w-full bg-gray-light/100 p-8 rounded-2xl",
+          active &&
+            "bg-gradient-to-b from-[#d93d1d]/90  to-primary hover:bg-yellow-hover hover:bg-gradient-to-b hover:from-primary hover:to-yellow-hover"
         )}>
         <h3 className="text-4xl text-stone-300 font-bold pb-10 border-b-2 border-stone-300">
           {" "}
@@ -93,12 +94,12 @@ const ItemPlan: FC<ItemPlanProps> = ({
           ))}
         </ul>
         <ButtonPrimary
+          text="OBTENER PLAN"
           type="button"
-          text="Seleccionar plan"
           className={cn(
-            "w-1/2 border-2 py-4 px-0 border-primary before:bg-transparent bg-transparent hover:bg-transparent",
+            "w-3/4 md:w-1/2 px-0 py-5 border-primary text-white  hover:bg-primary/20 bg-transparent hover:text-white",
             active &&
-              "border-2 border-white hover:text-gray-light hover:border-gray-light after:border-gray-light"
+              "border-[3px] border-white bg-transparent hover:bg-white/50 hover:border-white hover:text-gray-light after:border-white before:border-white"
           )}
         />
       </motion.div>
