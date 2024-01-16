@@ -18,6 +18,14 @@ const Hero = () => {
     },
   };
 
+  const handleContact = () => {
+    const message =
+      "Hola, quiero comenzar mi transformación. ¿Podrías darme más detalles?";
+    const SEND_MESSAGE = encodeURIComponent(message);
+
+    window.open(`https://wa.me/573006465549?text=${SEND_MESSAGE}`, "_blank");
+  };
+
   return (
     <section id="#home">
       <div className="relative w-full h-screen">
@@ -60,6 +68,7 @@ const Hero = () => {
                 className="w-full md:w-auto"
                 type="button"
                 text="Comienza ahora!"
+                onClick={handleContact}
               />
               <ButtonPrimary
                 className="w-full md:w-auto border-primary/50 bg-transparent hover:bg-transparent hover:text-white"

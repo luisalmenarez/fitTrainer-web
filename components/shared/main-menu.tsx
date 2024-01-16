@@ -11,6 +11,14 @@ const menuItems = [
 ];
 
 const MainMenu = () => {
+  const handleClick = () => {
+    const message =
+      "Hola, quisiera una asesoría. ¿Podrías proporcionarme más información?";
+    const SEND_MESSAGE = encodeURIComponent(message);
+
+    window.open(`https://wa.me/573006465549?text=${SEND_MESSAGE}`, "_blank");
+  };
+
   return (
     <ul className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-4">
       {menuItems.map((item, index) => (
@@ -25,7 +33,11 @@ const MainMenu = () => {
             visible: { opacity: 1, x: 0 },
           }}>
           {item.isButton ? (
-            <ButtonPrimary type="button" text={item.text} />
+            <ButtonPrimary
+              type="button"
+              text={item.text}
+              onClick={handleClick}
+            />
           ) : (
             <MenuItem href={item.href} text={item.text} />
           )}
