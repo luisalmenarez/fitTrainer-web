@@ -19,13 +19,19 @@ const Footer = () => {
         <FooterSection
           title="Contacto"
           list={[
+            { text: "WhatsApp", href: "/WhatsApp" },
             {
               text: "Instagram",
               href: "https://www.instagram.com/almenares_08/",
               target: "_blank",
               rel: "noopener noreferrer",
             },
-            { text: "WhatsApp", href: "/WhatsApp" },
+            {
+              text: "Facebook",
+              href: "https://web.facebook.com/manuel.almenarespolo",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
           ]}
         />
         <FooterSection
@@ -33,6 +39,7 @@ const Footer = () => {
           list={[
             { text: "Programas", href: "/program" },
             { text: "Planes", href: "/plan" },
+            { text: "Master Class", href: "/plan" },
           ]}
         />
         <section>
