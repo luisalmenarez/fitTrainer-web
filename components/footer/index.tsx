@@ -43,9 +43,9 @@ const Footer = () => {
           ]}
         />
         <section>
-          <h6 className="text-2xl font-semibold text-zinc-300 mb-5">
+          <h2 className="text-2xl font-semibold text-zinc-300 mb-5">
             Búsquedas populares
-          </h6>
+          </h2>
           <article className="flex items-center flex-wrap gap-2 text-white">
             <Tag text="Abdominales" />
             <Tag text="Entrenamiento" />
@@ -58,7 +58,7 @@ const Footer = () => {
         </section>
       </Container>
       <section className="bg-primary text-white text-center p-3 rounded-tl-lg rounded-tr-lg">
-        <h5 className="text-white font-semibold">
+        <h5 className="text-black font-bold">
           {" "}
           Todos los derechos reservados &copy; 2024{" "}
         </h5>

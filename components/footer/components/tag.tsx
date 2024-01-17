@@ -11,7 +11,7 @@ const Tag: FC<TagProps> = ({ text, active }) => {
     <span
       className={cn(
         '"py-1 px-2 rounded bg-gray-light"',
-        active && "bg-primary text-white p-2"
+        active && "bg-primary text-black p-2 font-bold"
       )}>
       {" "}
       {text}{" "}
