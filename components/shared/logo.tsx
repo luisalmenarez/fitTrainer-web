@@ -10,7 +10,7 @@ const Logo = () => {
       className="size-24"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: false, amount: 0.1 }}
       transition={{ delay: 0.2, duration: 0.4 }}
       variants={{
         hidden: { opacity: 0, x: -100 },

@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { FC } from "react";
+import { motion } from "framer-motion";
 
 interface FooterSectionProps {
   title: string;
@@ -7,8 +10,19 @@ interface FooterSectionProps {
 }
 
 const FooterSection: FC<FooterSectionProps> = ({ title, list }) => {
+  const fadeInConfig = {
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: false, amount: 0.1 },
+    transition: { delay: 0, duration: 0.6 },
+    variants: {
+      hidden: { opacity: 0, scale: 0.5 },
+      visible: { opacity: 1, scale: 1 },
+    },
+  };
+
   return (
-    <section>
+    <motion.section {...fadeInConfig}>
       <h2 className="text-2xl font-semibold text-zinc-300 mb-5"> {title} </h2>
       <ul>
         {list.map(({ text, href, target, rel }, index) => (
@@ -21,7 +35,7 @@ const FooterSection: FC<FooterSectionProps> = ({ title, list }) => {
           </li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 };
 
