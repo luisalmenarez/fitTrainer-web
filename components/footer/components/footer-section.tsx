@@ -9,7 +9,7 @@ interface FooterSectionProps {
 const FooterSection: FC<FooterSectionProps> = ({ title, list }) => {
   return (
     <section>
-      <h6 className="text-2xl font-semibold text-zinc-300 mb-5"> {title} </h6>
+      <h2 className="text-2xl font-semibold text-zinc-300 mb-5"> {title} </h2>
       <ul>
         {list.map(({ text, href, target, rel }, index) => (
           <li

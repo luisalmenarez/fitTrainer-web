@@ -4,6 +4,10 @@ import FooterSection from "@/components/footer/components/footer-section";
 import Tag from "@/components/footer/components/tag";
 
 const Footer = () => {
+  const info =
+    "Hola, quisiera una asesoría. ¿Podrías proporcionarme más información?";
+  const MESSAGE = `https://wa.me/573006465549?text=${info}`;
+
   return (
     <footer id="contact" className="bg-gray-light/10">
       <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 px-5 py-10 lg:px-8 lg:py-20">
@@ -19,7 +23,7 @@ const Footer = () => {
         <FooterSection
           title="Contacto"
           list={[
-            { text: "WhatsApp", href: "/WhatsApp" },
+            { text: "WhatsApp", href: `${MESSAGE}`, target: "_blank" },
             {
               text: "Instagram",
               href: "https://www.instagram.com/almenares_08/",
@@ -58,10 +62,10 @@ const Footer = () => {
         </section>
       </Container>
       <section className="bg-primary text-white text-center p-3 rounded-tl-lg rounded-tr-lg">
-        <h5 className="text-black font-bold">
+        <p className="text-black font-bold">
           {" "}
           Todos los derechos reservados &copy; 2024{" "}
-        </h5>
+        </p>
       </section>
     </footer>
   );
