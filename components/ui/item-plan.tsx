@@ -53,6 +53,13 @@ const ItemPlan: FC<ItemPlanProps> = ({
     },
   };
 
+  const handleClick = () => {
+    const message = "Hola, quisiera tomar uno de tu planes de entrenamiento.";
+    const SEND_MESSAGE = encodeURIComponent(message);
+
+    window.open(`https://wa.me/573006465549?text=${SEND_MESSAGE}`, "_blank");
+  };
+
   return (
     <div className="transition-all duration-700 hover:scale-105">
       <motion.div
@@ -94,13 +101,14 @@ const ItemPlan: FC<ItemPlanProps> = ({
           ))}
         </ul>
         <ButtonPrimary
-          text="OBTENER PLAN"
+          text="Obtener plan"
           type="button"
           className={cn(
-            "w-3/4 md:w-1/2 px-0 py-5 border-primary text-white  hover:bg-primary/20 bg-transparent hover:text-white",
+            "w-3/4 md:w-1/2 px-0 py-4 border-primary text-white hover:bg-primary/20 bg-transparent hover:text-white",
             active &&
               "border-[3px] border-white bg-transparent hover:bg-white/50 hover:border-white hover:text-gray-light after:border-white before:border-white"
           )}
+          onClick={handleClick}
         />
       </motion.div>
     </div>
