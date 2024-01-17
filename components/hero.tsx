@@ -10,8 +10,8 @@ const Hero = () => {
   const fadeInConfig = {
     initial: "hidden",
     whileInView: "visible",
-    viewport: { once: true, amount: 0.1 },
-    transition: { delay: 0.2, duration: 0.6 },
+    viewport: { once: false, amount: 0.1 },
+    transition: { delay: 0, duration: 0.6 },
     variants: {
       hidden: { opacity: 0, scale: 0.5 },
       visible: { opacity: 1, scale: 1 },
