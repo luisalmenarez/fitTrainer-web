@@ -1,4 +1,4 @@
-# Pfmanfit ✨
+# Pfmanfit 
 
 PFMANFIT es una web personalizada para el mejoramiento integral de tu bienestar físico! Este proyecto, utiliza las últimas tecnologías para ofrecer una experiencia fitness excepcional.
 
